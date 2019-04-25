@@ -1,0 +1,22 @@
+{
+    "name": "ozzythegiant/taxpros.com",
+    "description": "A sample tax preparation firm website",
+    "type": "project",
+    "require": {
+        "johnpbloch/wordpress": "*",
+        "wecodemore/wpstarter": "^2.4"
+    },
+    "authors": [
+        {
+            "name": "Oziel Perez",
+            "email": "OZLperez11@gmail.com"
+        }
+	],
+	"scripts": {
+        "post-install-cmd": "WCM\\WPStarter\\Setup::run",
+        "post-update-cmd": "WCM\\WPStarter\\Setup::run"
+	},
+	"extra": {
+        "wordpress-install-dir": "wordpress"
+    }
+}

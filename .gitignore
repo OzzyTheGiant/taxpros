@@ -1,0 +1,6 @@
+/vendor/
+/wordpress/
+/logs/
+
+composer.lock
+.env
