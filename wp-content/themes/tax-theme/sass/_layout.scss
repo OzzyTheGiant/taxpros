@@ -1,0 +1,77 @@
+@import "theme";
+
+* { 
+	font-family: $font-paragraphs; 
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	box-sizing:border-box;
+}
+
+html { line-height:1.5; }
+
+h1, h2, h3, h4, h5, h6 { font-family: $font-headings; }
+
+h1 { font-size:2.75rem; }
+
+h2 { font-size: 2rem; }
+
+a {text-decoration: none; color:initial}
+
+ul {padding:0;}
+
+// add padding to inner containers of a grid column element
+[class*="col-"] > div {
+	padding:0.5rem;
+}
+
+.row {
+	margin:0 auto;
+	max-width:75rem; // 1200px
+}
+
+.container-light {
+	h1, h2, h3, h4, h5, h6 { color: $color-main; }
+}
+
+.container-dark {
+	background-color:$color-secondary;
+	color:#FFF;
+	h1, h2, h3, h4, h5, h6 { color: #FFF; }
+}
+
+.container-green {
+	@extend .container-dark;
+	background-color:$color-main-dark;
+}
+
+.segment {
+	width:100%;
+	padding:2rem 1rem;
+	h2 {text-align: center;}
+}
+
+.button {
+	padding:0.5rem 1rem;
+	color: #FFF;
+	font-size:1.25rem;
+	border-radius:3px;
+	font-family:$font-headings;
+	font-weight:bold;
+	&.main { background-color:$color-main; }
+}
+
+#call-to-action {
+	text-align:center;
+	font-size:1.5rem;
+}
+
+footer {
+	background-color:$color-main-dark;
+	color:#FFF;
+	&.segment h2 {text-align:left;}
+}
+
+#footer-title {
+	margin:0.75rem 0;
+	font-size:4rem;
+}

@@ -1,6 +1,7 @@
 /vendor/
 /wordpress/
 /logs/
+/node_modules/
 
 composer.lock
 .env

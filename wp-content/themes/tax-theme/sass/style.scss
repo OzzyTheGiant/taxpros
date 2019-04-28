@@ -1,0 +1,16 @@
+/*!
+Theme Name: Tax Theme
+Author: Oziel Perez
+Description: A sample theme for a tax preparation firm
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+// Import normalize-scss npm package
+@import "../../../../node_modules/normalize-scss/sass/normalize/import-now";
+// Import flexboxgrid-sass npm package
+@import "../../../../node_modules/flexboxgrid-sass/flexboxgrid.scss";
+
+@import "layout";
+@import "home";
+@import "post";
