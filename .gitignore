@@ -2,6 +2,11 @@
 /wordpress/
 /logs/
 /node_modules/
+/wp-content/uploads
+/wp-content/plugins
+/wp-content/db.php
 
+.DS_Store
+package-lock.json
 composer.lock
 .env

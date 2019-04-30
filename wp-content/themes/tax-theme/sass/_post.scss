@@ -1,0 +1,19 @@
+@import "theme";
+
+#post {
+	padding:0 0.25rem;
+	background-color:#FFF;
+	h1 {color:$color-secondary;}
+	h2, h3, h4, h5, h6 {color:$color-main;}
+	img {width:100%;height:auto;}
+	&-container {
+		background-color:$color-main-dark;
+		padding-left:0.5rem;
+		padding-right:0.5rem;
+	}
+	p {font-size:1.25rem;}
+}
+
+.recent-post { display:block; }
+
+aside h2 { margin-top:0; }
