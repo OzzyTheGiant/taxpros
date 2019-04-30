@@ -60,6 +60,13 @@ ul {padding:0;}
 	&.main { background-color:$color-main; }
 }
 
+.post-card {
+	background-color:$color-secondary;
+	color:#FFF;
+	img {width:100%;height:auto;}
+	h3, p {padding:0.5rem;margin:0}
+}
+
 #call-to-action {
 	text-align:center;
 	font-size:1.5rem;

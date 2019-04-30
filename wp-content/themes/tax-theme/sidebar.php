@@ -14,7 +14,7 @@ $query = new WP_Query([
 if ($query->have_posts()) : ?>
 <h2>Recent Articles</h2>
 <?php while ($query->have_posts()) : $query->the_post(); ?>
-	<a class="recent-post" href="<?php the_permalink(); ?>">
+	<a class="post-card" href="<?php the_permalink(); ?>">
 		<?php the_post_thumbnail('full'); ?>
 		<h3><?php the_title(); ?></h3>
 		<p><?php the_date(); ?></p>
