@@ -46,7 +46,7 @@
 		</div>
 		<div class="segment container-gray" id="article-list">
 			<h2>Latest Articles</h2>
-			<div class="row">
+			<div class="row between-xs">
 				<?php
 				$query = new WP_Query([
 					"numberposts" => 4,

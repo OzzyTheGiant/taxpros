@@ -25,7 +25,7 @@ h2 {
 
 a {text-decoration: none; color:initial}
 
-ul {padding:0;}
+ul {padding:0; list-style-type:none;}
 
 // add padding to inner containers of a grid column element
 [class*="col-"] {
@@ -62,6 +62,23 @@ ul {padding:0;}
 	}
 }
 
+header {
+	min-height:3rem;
+	font-weight:bold;
+	&.segment {
+		padding-top:0;
+		padding-bottom:0;
+	}
+	img { width:11.25rem; }
+	li {
+		display:inline-block;
+		margin-left:1rem;
+	}
+	a {
+		display:block;
+		color:$color-secondary;
+	}
+}
 
 .segment {
 	width:100%;
@@ -97,6 +114,13 @@ footer {
 	background-color:$color-main-dark;
 	color:#FFF;
 	&.segment h2 {text-align:left;}
+	a {
+		color:#FFF;
+		font-size:1.25rem;
+	}
+	.menu {
+		margin:2em 0;
+	}
 }
 
 #footer-title {

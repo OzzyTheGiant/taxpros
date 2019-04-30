@@ -17,7 +17,7 @@
 				</div>
 			</div>
 			<div class="col-lg-4">
-
+				<?php wp_nav_menu(["theme-location" => "footer-menu"]); ?>
 			</div>
 			<div id="copyright" class="col-xs-12"><div>&copy; <?php echo date('Y'); ?> TaxPros. All Rights Reserved</div></div>
 		</div>
