@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "flexboxgrid-sass": "^8.0.5",
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "scss-mixins-collection": "^1.2.1"
   }
 }

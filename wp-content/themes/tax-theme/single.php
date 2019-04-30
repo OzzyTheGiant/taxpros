@@ -6,12 +6,12 @@
 			<h1><?php the_title(); ?></h1>
 			<p><time datetime="<?php echo get_the_date('c'); ?>"><?php the_date(); ?></time></p>
 		</div>
-		<div id="article-content" class="col-lg-8 col-md-9 col-xs-12">
+		<div id="article-content" class="col-sm-8 col-xs-12">
 			<?php the_post_thumbnail('full'); ?>
 			<?php the_content(); ?>
 		</div>
 		<?php endwhile; ?>
-		<aside class="col-lg-4 col-md-3 col-xs-12">
+		<aside class="col-sm-4 col-xs-12">
 			<?php get_sidebar(); ?>
 		</aside>
 	</article>

@@ -5,7 +5,11 @@ Description: A sample theme for a tax preparation firm
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-
+$breakpoints: // for grid library
+	tb 44em 42rem, // 672px
+	sm 48em 46rem,
+	md 62em 61rem,
+	lg 75em 71rem;
 // Import normalize-scss npm package
 @import "../../../../node_modules/normalize-scss/sass/normalize/import-now";
 // Import flexboxgrid-sass npm package

@@ -1,4 +1,8 @@
+@import "../../../../node_modules/scss-mixins-collection/mixins/fluid-type";
 @import "theme";
+
+$min-vw: 20rem;
+$max-vw: 75rem;
 
 * { 
 	font-family: $font-paragraphs; 
@@ -11,9 +15,13 @@ html { line-height:1.5; }
 
 h1, h2, h3, h4, h5, h6 { font-family: $font-headings; font-weight:800; }
 
-h1 { font-size:2.75rem; }
+h1 { 
+	@include fluid-type('font-size', $min-vw, $max-vw, 1.75rem, 2.75rem);
+}
 
-h2 { font-size: 2rem; }
+h2 { 
+	@include fluid-type('font-size', $min-vw, $max-vw, 1.5rem, 2rem);
+}
 
 a {text-decoration: none; color:initial}
 
@@ -27,6 +35,10 @@ ul {padding:0;}
 .row {
 	margin:0 auto;
 	max-width:75rem; // 1200px
+	.row { 
+		padding-left:0; 
+		padding-right:0;
+	}
 }
 
 .container-light {

@@ -11,7 +11,9 @@
 		padding-right:0.5rem;
 		min-height:500px;
 	}
-	p {font-size:1.25rem;}
+	p {
+		@include fluid-type('font-size', $min-vw, $max-vw, 1rem, 1.5rem);
+	}
 }
 
 #article-content {
