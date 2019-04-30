@@ -6,7 +6,7 @@
 	<?php if (have_posts()) : ?>
 	<div class="row">
 		<?php while (have_posts()) : the_post(); ?>
-		<div class="col-md-4 col-xs-12">
+		<div class="col-md-4 col-tb-6 col-xs-12">
 			<a class="post-card" href="<?php the_permalink(); ?>">
 				<?php the_post_thumbnail('full'); ?>
 				<h3><?php the_title(); ?></h3>

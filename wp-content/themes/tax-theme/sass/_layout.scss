@@ -28,8 +28,9 @@ a {text-decoration: none; color:initial}
 ul {padding:0;}
 
 // add padding to inner containers of a grid column element
-[class*="col-"] > div {
-	padding:0.5rem;
+[class*="col-"] {
+	margin-bottom:1rem;
+	> div { padding:0.5rem; }
 }
 
 .row {
