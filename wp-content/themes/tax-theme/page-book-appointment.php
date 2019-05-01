@@ -10,7 +10,7 @@
 		<input type="text" name="phone" placeholder="Phone Number"/>
 		<input type="text" name="appointment_time" placeholder="Appointment Date & Time"/>
 		<textarea placeholder="Your message"></textarea>
-		<button type="submit" class="button main">Book Appointment</button>
+		<button type="submit" class="button main"><?php _e('Book Appointment');?></button>
 	</form>
 	<?php endwhile; endif; ?>
 </main>

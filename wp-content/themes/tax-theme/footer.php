@@ -10,7 +10,7 @@
 			</div>
 			<div class="col-lg-4">
 				<div>
-					<h2>Location</h2>
+					<h2><?php _e('Location'); ?></h2>
 					<p>123 Main Street</p>
 					<p>Anytown, USA 10000</p>
 					<p>123-555-1234</p>
@@ -19,7 +19,7 @@
 			<div class="col-lg-4">
 				<?php wp_nav_menu(["theme-location" => "footer-menu"]); ?>
 			</div>
-			<div id="copyright" class="col-xs-12"><div>&copy; <?php echo date('Y'); ?> TaxPros. All Rights Reserved</div></div>
+			<div id="copyright" class="col-xs-12"><div>&copy; <?php echo date('Y'); ?> TaxPros. <?php _e('All Rights Reserved'); ?></div></div>
 		</div>
 	</footer>
 	<?php wp_footer(); ?>

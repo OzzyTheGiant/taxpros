@@ -13,7 +13,7 @@ $query = new WP_Query([
 
 if ($query->have_posts()) : ?>
 <div class="row">
-	<h2 class="col-xs-12">Recent Articles</h2>
+	<h2 class="col-xs-12"><?php _e('Recent Articles'); ?></h2>
 	<?php while ($query->have_posts()) : $query->the_post(); ?>
 	<div class="col-sm-12 col-tb-6 col-xs-12">
 		<a class="post-card" href="<?php the_permalink(); ?>">

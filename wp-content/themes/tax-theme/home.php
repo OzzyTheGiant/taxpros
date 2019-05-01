@@ -16,7 +16,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php else : ?>
-	<p>Posts could not be loaded</p>
+	<p><?php _e('Posts could not be loaded'); ?></p>
 	<?php endif; ?>
 </main>
 <?php get_footer(); ?>

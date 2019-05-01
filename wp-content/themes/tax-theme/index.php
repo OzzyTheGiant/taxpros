@@ -14,38 +14,38 @@
 					<!-- Home page title, Wordpress tagline -->
 					<h1><?php bloginfo('description'); ?></h1>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae sed ea eius. Consequatur pariatur dignissimos minima quos adipisci quaerat reiciendis, beatae, possimus dolor in exercitationem quis aperiam dicta distinctio quasi.</p>
-					<a class="button main" href="#">Book Appointment</a>
+					<a class="button main" href="#"><?php _e('Book Appointment'); ?></a>
 				</div>
 			</div>
 		</div>
 		<div class="segment container-light" id="sales-pitch">
-			<h2>Why You Should Choose TaxPros</h2>
+			<h2><?php _e('Why You Should Choose TaxPros'); ?></h2>
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="sales-pitch-point container-green">
 						<img src="http://placehold.it/300x200/"/>
-						<h3>Save Time</h3>
+						<h3><?php _e('Save Time'); ?></h3>
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ea commodi molestiae incidunt, consequatur, ut aut autem nobis odio minus mollitia illum ex pariatur? Architecto aspernatur atque corrupti quos fugit!</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="sales-pitch-point container-green">
 						<img src="http://placehold.it/300x200/"/>
-						<h3>Access Documents Online</h3>
+						<h3><?php _e('Access Documents Online'); ?></h3>
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ea commodi molestiae incidunt, consequatur, ut aut autem nobis odio minus mollitia illum ex pariatur? Architecto aspernatur atque corrupti quos fugit!</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="sales-pitch-point container-green">
 						<img src="http://placehold.it/300x200/"/>
-						<h3>Track Efile Status</h3>
+						<h3><?php _e('Track Efile Status'); ?></h3>
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ea commodi molestiae incidunt, consequatur, ut aut autem nobis odio minus mollitia illum ex pariatur? Architecto aspernatur atque corrupti quos fugit!</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="segment container-gray" id="article-list">
-			<h2>Latest Articles</h2>
+			<h2><?php _e('Latest Articles'); ?></h2>
 			<div class="row between-xs">
 				<?php
 				$query = new WP_Query([
@@ -69,7 +69,7 @@
 					</div>
 					<?php endwhile; ?>
 				<?php else : ?>
-					<p class="col-xs-12"><?php __('The posts could not be loaded. Try refreshing the page.'); ?></p>
+					<p class="col-xs-12"><?php _e('The posts could not be loaded. Try refreshing the page.'); ?></p>
 				<?php endif; wp_reset_postdata(); ?>
 			</div>
 		</div>

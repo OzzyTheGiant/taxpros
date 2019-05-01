@@ -21,6 +21,6 @@
 				</a>
 			</div>
 			<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-			<img id="menu-button" class="menu-button" src="<?php echo get_template_directory_uri() . '/images/menu.svg'; ?>" alt="Menu"/>
+			<img id="menu-button" class="menu-button" src="<?php echo get_template_directory_uri() . '/images/menu.svg'; ?>" alt="<?php _e('Menu'); ?>"/>
 		</nav>
 	</header>
