@@ -9,7 +9,7 @@
 	<header class="segment">
 		<nav class="row between-xs middle-xs">
 			<div>
-				<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+				<a class="logo" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 					<?php 
 					$logo_id = get_theme_mod('custom_logo');
 					$logo = wp_get_attachment_image_src($logo_id, 'full');
@@ -17,9 +17,10 @@
 					<img src="<?php esc_url($logo); ?>" alt="<?php get_bloginfo('name'); ?>"/>
 					<?php else : ?>
 					<img src="<?php echo get_template_directory_uri() . '/images/placeholder-logo.png'; ?>" alt="placeholder logo"/>
-					<?php endif ?>
+					<?php endif; ?>
 				</a>
 			</div>
 			<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+			<img id="menu-button" class="menu-button" src="<?php echo get_template_directory_uri() . '/images/menu.svg'; ?>" alt="Menu"/>
 		</nav>
 	</header>

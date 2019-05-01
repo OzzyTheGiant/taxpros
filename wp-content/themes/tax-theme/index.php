@@ -69,7 +69,7 @@
 					</div>
 					<?php endwhile; ?>
 				<?php else : ?>
-					<p class="col-xs-12">The posts could not be loaded. Try refreshing the page.</p>
+					<p class="col-xs-12"><?php __('The posts could not be loaded. Try refreshing the page.'); ?></p>
 				<?php endif; wp_reset_postdata(); ?>
 			</div>
 		</div>
